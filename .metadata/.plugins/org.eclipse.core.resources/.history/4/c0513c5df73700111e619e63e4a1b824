@@ -1,0 +1,38 @@
+package com.java.programs;
+
+import java.util.HashMap;
+
+public class HashMapDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		 //   Map (Interface) <---implements--- HashMap(class)
+		
+		//Keyvalue pairs (concepts)
+		
+		//values can be duplicated but key should be unique
+		
+		// Declearation
+		
+		//Map hm = new HashMap();
+		
+		
+//		Employee id       employee name
+//		101               Rajesh
+//		102               Kumar
+//		103 			  Mini
+		
+		HashMap<Integer, String> hm = new HashMap<Integer,String>();
+		
+		System.out.println(hm.size());
+
+		
+		hm.put(101, "Rajesh");
+		hm.put(102,"Kumar");
+		hm.put(103, "MINI");
+		hm.put(102, "Krishna")
+		
+	}
+
+}

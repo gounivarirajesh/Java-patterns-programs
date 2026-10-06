@@ -1,0 +1,73 @@
+package com.java.programs;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.ListIterator;
+
+public class HashsetDemo {
+
+	public static void main(String[] args) {
+		
+		// TODO Auto-generated method stub
+		
+		// collections(interface) --> set(Interface) --> Hashset (Class)
+		
+		HashSet hs = new HashSet();
+		
+		//Set hss = new HashSet();
+		//HashSet<Integer> hsi = new HashSet<Integer>();
+		
+		hs.add(100);
+		hs.add(100);
+		hs.add(10.55);
+		hs.add(true);
+		hs.add(null);
+		hs.add(null);
+		hs.add("Rajesh");
+		hs.add('A');
+		
+		System.out.println(hs);  // [null, A, 100, Rajesh, 10.55, true]
+		
+		
+		
+	//How to remove the element in the hashset 
+		
+	
+		hs.remove(10.55);
+
+		System.out.println("After removing "+ hs);  //After removing [null, A, 100, Rajesh, true]
+
+		
+	//Inserting element is not possible  
+		
+		
+	//Access specific element -- > not possible
+		
+		
+		//convert hashset to array list
+		
+		
+		ArrayList al = new ArrayList(hs);
+		
+		System.out.println(al);
+		
+System.out.println( "After converting to hashset to array list geting the 3rd index value --->"+al.get(3));
+
+
+//read all the elements using for each 
+
+for(Object obj:hs)
+{
+	System.out.println("for each/enhance "+obj);
+}
+
+Iterator it = hs.iterator();
+
+
+
+
+
+	}
+
+}

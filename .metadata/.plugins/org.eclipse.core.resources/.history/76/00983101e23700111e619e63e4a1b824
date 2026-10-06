@@ -1,0 +1,128 @@
+package com.java.programs;
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class ArrayListdemo {
+	
+	public static void main(String args[])
+	{
+		//Decleartion 
+		//hertrogenious data 
+		
+		//ArrayList<String>  mylist = new ArrayList<String>();
+		
+		ArrayList list =new ArrayList();
+		
+		list.add(100);
+		list.add(10.5);
+		list.add('A');
+		list.add(true);
+		list.add(100);//duplicate we can pass
+		list .add(null);
+		list.add("Rajesh");
+		
+		
+	System.out.println("Size of an Array "+ list.size());
+	
+	System.out.println("Print data from arraylist "+list);  //Print data from arraylist [100, 10.5, A, true, 100, null, Rajesh]
+		
+	// how can we remove the element in array	
+	
+	list.remove(4); //here 4 is index of element
+	System.out.println("After Removing the 4th position in the Array Index "+list); //Print data from arraylist [100, 10.5, A, true, null, Rajesh]
+	
+	
+	//how to insert value in the array list
+	
+	list.add(2,"Kumar");// 2nd position inserting the Kumar value
+	
+	System.out.println("After Insertion "+list); //After Insertion [100, 10.5, Kumar, A, true, null, Rajesh]
+	
+	
+	
+	//modify element in the arraylist(modify/replace/change)
+	
+	
+	list.set(2, "KumarRaj");
+	
+	
+	System.out.println("Replacing the value"+list);
+	
+	//Access specific element from arraylist
+	
+	
+	System.out.println("to get the specfic value in the array   My name is "+list.get(2));
+	
+	
+	
+	//how to read the all the element in the array list
+	
+	
+	//using for loop we can read it
+	
+// for(int i=0;i<=list.size()-1;i++)
+// {
+//	 
+//	 
+//	 System.out.println(list.get(i));
+// }
+// 
+ 
+ //enhanced for loop
+ 
+ for(Object x:list)
+ {
+	 System.out.println(x);
+ }	
+	
+ 
+ 
+ 
+ 
+//using iterator , it will iterate the array values 
+
+ //hasnext is a method it will check first element is present are not in the array list 
+ 
+// hasnext() method how it works:  if the value is exist then it will be true and it return the value
+// next() to caputure the values 
+ 
+ //next()  will move to next index 
+ 
+//iterator(), hasnext() , next()
+ 
+	Iterator<Object> it = list.iterator();
+	
+	System.out.println(it.next());
+	
+	while(it.hasNext())
+	{
+		System.out.println(it.next());
+	}
+	
+	
+	
+	//to check arraylist is empty or not
+	
+	System.out.println("is array list empty " + list.isEmpty());
+	
+	
+	//remove all the elements from array list
+	
+	
+	ArrayList list2 =new ArrayList();
+	
+	
+	
+	list2.add(100);
+	list2.add("Rajesh");
+	
+	
+	list.removeAll(list2);
+
+	System.out.println("After removed multiple elements in the array"+ list);
+
+			
+	
+	
+	}	
+}

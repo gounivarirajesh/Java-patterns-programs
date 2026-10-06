@@ -1,0 +1,27 @@
+package com.java.programs;
+
+import java.util.ArrayList;
+
+public class ArrayListdemo {
+	
+	public static void main(String args)
+	{
+		//Decleartion 
+		//hertrogenious data 
+		
+		//ArrayList<String>  mylist = new ArrayList<String>();
+		
+		ArrayList list =new ArrayList();
+		
+		list.add(100);
+		list.add(10.5);
+		list.add('A');
+		list.add(true);
+		
+		)
+		
+		
+		
+	}
+
+}

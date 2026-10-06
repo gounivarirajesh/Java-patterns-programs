@@ -1,0 +1,47 @@
+package com.java.programs;
+
+import java.util.ArrayList;
+
+public class ArrayListdemo {
+	
+	public static void main(String args[])
+	{
+		//Decleartion 
+		//hertrogenious data 
+		
+		//ArrayList<String>  mylist = new ArrayList<String>();
+		
+		ArrayList list =new ArrayList();
+		
+		list.add(100);
+		list.add(10.5);
+		list.add('A');
+		list.add(true);
+		list.add(100);//duplicate we can pass
+		list .add(null);
+		list.add("Rajesh");
+		
+		
+	System.out.println("Size of an Array "+ list.size());
+	
+	System.out.println("Print data from arraylist "+list);  //Print data from arraylist [100, 10.5, A, true, 100, null, Rajesh]
+		
+	// how can we remove the element in array	
+	
+	list.remove(4); //here 4 is index of element
+	System.out.println("After Removing the 4th position in the Array Index "+list); //Print data from arraylist [100, 10.5, A, true, null, Rajesh]
+	
+	
+	//how to insert value in the array list
+	
+	list.add(2,"Kumar");// 2nd position inserting the Kumar value
+	
+	System.out.println("After Insertion "+list);
+	
+	
+	
+	
+	
+	}
+
+}

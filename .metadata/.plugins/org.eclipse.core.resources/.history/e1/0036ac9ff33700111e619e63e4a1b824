@@ -1,0 +1,57 @@
+package com.java.programs;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+
+public class HashsetDemo {
+
+	public static void main(String[] args) {
+		
+		// TODO Auto-generated method stub
+		
+		// collections(interface) --> set(Interface) --> Hashset (Class)
+		
+		HashSet hs = new HashSet();
+		
+		//Set hss = new HashSet();
+		//HashSet<Integer> hsi = new HashSet<Integer>();
+		
+		hs.add(100);
+		hs.add(100);
+		hs.add(10.55);
+		hs.add(true);
+		hs.add(null);
+		hs.add(null);
+		hs.add("Rajesh");
+		hs.add('A');
+		
+		System.out.println(hs);  // [null, A, 100, Rajesh, 10.55, true]
+		
+		
+		
+	//How to remove the element in the hashset 
+		
+	
+		hs.remove(10.55);
+
+		System.out.println("After removing "+ hs);  //After removing [null, A, 100, Rajesh, true]
+
+		
+	//Inserting element is not possible  
+		
+		
+	//Access specific element -- > not possible
+		
+		
+		//convert hashset to array list
+		
+		
+		ArrayList al = new ArrayList(hs);
+		
+		System.out.println(al);
+		
+		al.get(3);
+
+	}
+
+}

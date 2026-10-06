@@ -1,0 +1,18 @@
+package com.java.programs;
+
+import java.util.HashSet;
+
+public class HashsetDemo {
+
+	public static void main(String[] args) {
+		c
+		// TODO Auto-generated method stub
+		
+		// collections(interface) --> set(Interface) --> Hashset (Class)
+		
+		HashSet hs = new HashSet();
+		
+
+	}
+
+}
